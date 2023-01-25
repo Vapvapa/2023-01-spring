@@ -31,11 +31,10 @@ public class QuestionDaoCsv implements QuestionDao {
             return new CsvToBeanBuilder<Question>(reader)
                     .withType(Question.class)
                     .withSeparator(CSV_SEPARATOR)
-                    .withIgnoreLeadingWhiteSpace(true)
                     .build()
                     .parse();
         } catch (IOException e) {
-            throw new RuntimeException("Ошибка чтения вопросника", e);
+            throw new RuntimeException("Ошибка чтения файла с вопросами", e);
         }
     }
 }

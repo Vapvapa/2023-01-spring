@@ -18,7 +18,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Question {
-    /** Вопрос */
+    /** Текст вопроса */
     @CsvBindByName(required = true)
     private String question;
 

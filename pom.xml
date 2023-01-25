@@ -8,6 +8,7 @@
   <url>http://maven.apache.org</url>
     <modules>
       <module>hw_001</module>
+      <module>hw_002</module>
     </modules>
 
   <properties>

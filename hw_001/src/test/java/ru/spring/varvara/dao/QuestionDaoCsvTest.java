@@ -15,8 +15,8 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 @DisplayName("Тест класса QuestionDaoCsvTest, чтение csv файла с вопросами")
 public class QuestionDaoCsvTest {
     @Test
-    @DisplayName("Тестна правильность чтения вопросов с валидного файла")
-    void findAll() {
+    @DisplayName("Тест на правильность чтения вопросов с валидного файла")
+    void testFindAll() {
         QuestionDaoCsv daoCsv = new QuestionDaoCsv("validFile.csv");
         List<Question> questions = daoCsv.findAll();
 

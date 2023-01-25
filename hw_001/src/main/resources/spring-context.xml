@@ -8,7 +8,10 @@
         <constructor-arg name="scvResourceName" value="testing.csv"/>
     </bean>
 
-    <bean id="examService" class="ru.spring.varvara.service.TestingServiceImpl">
+    <bean id="questionValidator" class="ru.spring.varvara.service.QuestionValidatorImpl"/>
+
+    <bean id="testingService" class="ru.spring.varvara.service.TestingServiceImpl">
         <constructor-arg name="questionDao" ref="questionDao"/>
+        <constructor-arg name="questionValidator" ref="questionValidator"/>
     </bean>
 </beans>
